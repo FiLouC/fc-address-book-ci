@@ -16,6 +16,12 @@ public class ContactManager {
                 .toList();
     }
 
+    /**
+     *
+     * @param contact
+     * @param query
+     * @return
+     */
     private boolean isContactMatched(Contact contact, String query) {
         if (query == null || query.isEmpty()) return true;
         query = query.toLowerCase();
